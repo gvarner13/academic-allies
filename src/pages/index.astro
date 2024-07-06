@@ -1,18 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import myImage from "../cc_act_img_1.webp";
+import circle1 from "../aa_circle_1.webp";
+import circle2 from "../aa_circle_2.webp";
+import circle3 from "../aa_circle_3.webp";
 ---
 
 <Layout title="Academic Allies">
   <main>
-    <div>Cool Stuff goes here</div>
     <section>
-      <h1>About Us</h1>
+      <div><Image src={myImage} alt="A bird sitting on a nest of eggs." /></div>
+    </section>
+    <section class="mx-auto flex flex-col items-center py-6">
+      <h1 class="p-6 text-3xl font-medium">About Us</h1>
       <div class="flex justify-around">
-        <div class="basis-1/3">
-          <img
-            src="https://picsum.photos/400?random=1"
-            alt="Circle img"
-            class="rounded-full"
+        <div class="flex basis-1/3 flex-col items-center p-6">
+          <Image
+            src={circle1}
+            alt="A bird sitting on a nest of eggs."
+            class="h-96 w-96 rounded-full"
           />
           <p>
             Our experience and relationships provide our clients with coaching,
@@ -20,11 +27,11 @@ import Layout from "../layouts/Layout.astro";
             in navigating the dynamic landscape of education.
           </p>
         </div>
-        <div class="basis-1/3">
-          <img
-            src="https://picsum.photos/400?random=2"
-            alt="Circle img"
-            class="rounded-full"
+        <div class="flex basis-1/3 flex-col items-center p-6">
+          <Image
+            src={circle2}
+            alt="A bird sitting on a nest of eggs."
+            class="h-96 w-96 rounded-full"
           />
           <p>
             Our team of advisors bring years of experience to your school. Their
@@ -34,11 +41,11 @@ import Layout from "../layouts/Layout.astro";
             leadership, team building, and diversity trainings and consultation.
           </p>
         </div>
-        <div class="basis-1/3">
-          <img
-            src="https://picsum.photos/400?random=3"
-            alt="Circle img"
-            class="rounded-full"
+        <div class="flex basis-1/3 flex-col items-center p-6">
+          <Image
+            src={circle3}
+            alt="A bird sitting on a nest of eggs."
+            class="h-96 w-96 rounded-full"
           />
           <p>
             We understand that every student is unique and has different
