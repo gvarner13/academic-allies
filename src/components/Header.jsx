@@ -72,7 +72,7 @@ export default function Header() {
         className="mx-auto flex items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
               alt=""
@@ -93,31 +93,31 @@ export default function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <a
-            href="#"
+            href="/"
             className="text-sm font-semibold leading-6 text-gray-900 uppercase"
           >
             Home
           </a>
           <a
-            href="#"
+            href="/consulting-for-businesses"
             className="text-sm font-semibold leading-6 text-gray-900 uppercase"
           >
             Consulting For Businesses
           </a>
           <a
-            href="#"
+            href="/trainings-for-schools"
             className="text-sm font-semibold leading-6 text-gray-900 uppercase"
           >
             Trainings For School
           </a>
-          <a
+          {/* <a
             href="#"
             className="text-sm font-semibold leading-6 text-gray-900 uppercase"
           >
             Ap Bootcamps
-          </a>
+          </a> */}
           <a
-            href="#"
+            href="/faq"
             className="text-sm font-semibold leading-6 text-gray-900 uppercase"
           >
             FAQ
