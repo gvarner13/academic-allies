@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.7.0",
     "@astrojs/react": "^3.6.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/fjalla-one": "^5.0.13",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.4",
     "@types/react": "^18.3.3",
