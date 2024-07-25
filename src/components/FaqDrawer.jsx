@@ -7,9 +7,9 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export default function FaqDrawer() {
   return (
-    <div className="h-screen w-full px-4 pt-32">
-      <div className="mx-auto w-full divide-y divide-white/5 rounded-xl bg-white/5">
-        <Disclosure as="div" className="p-6" defaultOpen={true}>
+    <div className="mx-auto min-h-full w-1/2 px-4 pb-24 pt-20">
+      <div>
+        <Disclosure as="div" className="p-6" defaultOpen={false}>
           <DisclosureButton className="group flex w-full items-center justify-between">
             <span className="text-2xl font-medium">
               How much does it cost to work with Academic Allies?
@@ -26,7 +26,7 @@ export default function FaqDrawer() {
             <span className="text-2xl font-medium">
               What are the qualifications of Academic Allies's consultants?
             </span>
-            <ChevronDownIcon className="size-5 fill-white/60 group-data-[open]:rotate-180 group-data-[hover]:fill-white/50" />
+            <ChevronDownIcon className="size-5 fill-black/60 group-data-[open]:rotate-180 group-data-[hover]:fill-black/50" />
           </DisclosureButton>
           <DisclosurePanel className="mt-2">
             All of Academic Allies's consultants have advanced degrees in their
@@ -36,20 +36,26 @@ export default function FaqDrawer() {
           </DisclosurePanel>
         </Disclosure>
         <Disclosure as="div" className="p-6">
-          <DisclosureButton>
-            What is the process for working with Academic Allies?
+          <DisclosureButton className="group flex w-full items-center justify-between">
+            <span className="text-2xl font-medium">
+              What is the process for working with Academic Allies?
+            </span>
+            <ChevronDownIcon className="size-5 fill-black/60 group-data-[open]:rotate-180 group-data-[hover]:fill-black/50" />
           </DisclosureButton>
-          <DisclosurePanel className="mt-2 text-sm/5 text-white/50">
+          <DisclosurePanel className="mt-2">
             We begin with an initial consultation to discuss your goals and
             needs. From there, we create a customized plan for you and provide
             ongoing support throughout the process.
           </DisclosurePanel>
         </Disclosure>
         <Disclosure as="div" className="p-6">
-          <DisclosureButton>
-            What services does Academic Allies provide?
+          <DisclosureButton className="group flex w-full items-center justify-between">
+            <span className="text-2xl font-medium">
+              What services does Academic Allies provide?
+            </span>
+            <ChevronDownIcon className="size-5 fill-black/60 group-data-[open]:rotate-180 group-data-[hover]:fill-black/50" />
           </DisclosureButton>
-          <DisclosurePanel className="mt-2 text-sm/5 text-white/50">
+          <DisclosurePanel className="mt-2">
             Academic Allies offers a wide range of educational consulting
             services. For businesses we offer services tailored to product
             alignment, relationship building, and sales consulting. Our schools
@@ -58,10 +64,13 @@ export default function FaqDrawer() {
           </DisclosurePanel>
         </Disclosure>
         <Disclosure as="div" className="p-6">
-          <DisclosureButton>
-            Does Academic Allies offer virtual consulting services?
+          <DisclosureButton className="group flex w-full items-center justify-between">
+            <span className="text-2xl font-medium">
+              Does Academic Allies offer virtual consulting services?
+            </span>
+            <ChevronDownIcon className="size-5 fill-black/60 group-data-[open]:rotate-180 group-data-[hover]:fill-black/50" />
           </DisclosureButton>
-          <DisclosurePanel className="mt-2 text-sm/5 text-white/50">
+          <DisclosurePanel className="mt-2">
             Yes, Academic Allies offers virtual consulting services to clients
             all over the world. Meetings can be conducted via video conferencing
             or phone.
