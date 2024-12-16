@@ -24,6 +24,8 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import { Image } from "astro:assets";
+import mainLogo from "../academic_allies_main_logo.png";
 
 const products = [
   {
@@ -66,7 +68,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white/25 sfixed top-0 w-full">
+    <header className="sfixed top-0 w-full bg-white/25">
       <nav
         aria-label="Global"
         className="mx-auto flex items-center justify-between p-6 lg:px-8"
@@ -76,8 +78,9 @@ export default function Header() {
             <span className="sr-only">Your Company</span>
             <img
               alt=""
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
+              src={mainLogo.src}
+              className="h-16 w-auto"
+              style={{ objectFit: "fill", objectPosition: "50% 50%" }}
             />
           </a>
         </div>
@@ -94,19 +97,19 @@ export default function Header() {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <a
             href="/"
-            className="text-sm font-semibold leading-6 text-gray-900 uppercase"
+            className="text-md font-semibold uppercase leading-6 text-gray-900"
           >
             Home
           </a>
           <a
             href="/consulting-for-businesses"
-            className="text-sm font-semibold leading-6 text-gray-900 uppercase"
+            className="text-md font-semibold uppercase leading-6 text-gray-900"
           >
             Consulting For Businesses
           </a>
           <a
             href="/trainings-for-schools"
-            className="text-sm font-semibold leading-6 text-gray-900 uppercase"
+            className="text-md font-semibold uppercase leading-6 text-gray-900"
           >
             Trainings For School
           </a>
@@ -118,7 +121,7 @@ export default function Header() {
           </a> */}
           <a
             href="/faq"
-            className="text-sm font-semibold leading-6 text-gray-900 uppercase"
+            className="text-md font-semibold uppercase leading-6 text-gray-900"
           >
             FAQ
           </a>

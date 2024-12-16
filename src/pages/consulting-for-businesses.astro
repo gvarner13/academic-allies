@@ -1,6 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
+import mainImage from "../laptop-shot-1.jpg";
+import tablet1 from "../tablets-1.jpg";
+import teamshot1 from "../teamshot-1.jpg";
+import teamwork from "../teamwork-1.jpg";
+import penshot1 from "../penshot-1.jpg";
 ---
 
 <Layout title="Academic Allies">
@@ -9,40 +14,46 @@ import { Image } from "astro:assets";
       <div class="flex">
         <div>
           <Image
-            src="https://picsum.photos/800/500"
+            src={mainImage}
             alt="A bird sitting on a nest of eggs."
             width="800"
             height="500"
           />
         </div>
-        <div class="flex flex-col justify-end">
-          <h1>TRANSFORM YOUR RELATIONSHIPS WITH ACADEMIC ALLIES</h1>
+        <div class="flex flex-col justify-center gap-6 p-6">
+          <h1 class="text-4xl">
+            TRANSFORM YOUR RELATIONSHIPS WITH ACADEMIC ALLIES
+          </h1>
           <p>
             At Academic Allies, we provide top-notch educational consulting
             services to help you reach your full potential. Contact us to learn
             more about how we can help you succeed!
           </p>
-          <a
-            class="rounded bg-[#04233b] px-10 py-5 text-white"
-            href="mailto:contact@academicallies.org"
-            >Find Out More
-          </a>
+          <div class="flex">
+            <a
+              class="rounded bg-[#04233b] px-10 py-5 text-white"
+              href="mailto:contact@academicallies.org"
+              >Find Out More
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <section>
       <div class="container mx-auto">
-        <div class="text-center"><h2>WELCOME TO ACADEMIC ALLIES!</h2></div>
-        <div class="grid grid-cols-2 justify-center">
-          <div class="flex flex-col items-center">
-            <h3>Our Mission</h3>
+        <div class="my-8 text-center">
+          <h2 class="text-3xl">WELCOME TO ACADEMIC ALLIES!</h2>
+        </div>
+        <div class="grid grid-cols-2 justify-items-center">
+          <div class="my-6 flex max-w-md flex-col items-center">
+            <h3 class="text-xl">Our Mission</h3>
             <Image
-              src="https://picsum.photos/596/296"
+              src={teamshot1}
               alt="A bird sitting on a nest of eggs."
               width="596"
               height="296"
             />
-            <p>
+            <p class="text-center">
               At Academic Allies, our mission is to provide personalized
               educational consulting services to schools and professionals. We
               believe that every individual has unique strengths and challenges,
@@ -50,44 +61,44 @@ import { Image } from "astro:assets";
               full potential.
             </p>
           </div>
-          <div class="flex flex-col items-center">
-            <h3>Our Team</h3>
+          <div class="my-6 flex max-w-md flex-col items-center">
+            <h3 class="text-xl">Our Team</h3>
             <Image
-              src="https://picsum.photos/596/296"
+              src={teamwork}
               alt="A bird sitting on a nest of eggs."
               width="596"
               height="296"
             />
-            <p>
+            <p class="text-center">
               Our team of experienced consultants has a diverse background in
               education, business, and other fields. We bring a wealth of
               knowledge and expertise to our work, and we are committed to
               providing the highest level of service to our clients.
             </p>
           </div>
-          <div class="flex flex-col items-center">
-            <h3>Our Services</h3>
+          <div class="my-6 flex max-w-md flex-col items-center">
+            <h3 class="text-xl">Our Services</h3>
             <Image
-              src="https://picsum.photos/596/296"
+              src={penshot1}
               alt="A bird sitting on a nest of eggs."
               width="596"
               height="296"
             />
-            <p>
+            <p class="text-center">
               We offer a range of services to help our clients achieve their
               goals, including product alignment, sales consulting, and
               relationship strategies.
             </p>
           </div>
-          <div class="flex flex-col items-center">
-            <h3>Contact Us</h3>
+          <div class="my-6 flex max-w-md flex-col items-center">
+            <h3 class="text-xl">Contact Us</h3>
             <Image
-              src="https://picsum.photos/596/296"
+              src={tablet1}
               alt="A bird sitting on a nest of eggs."
               width="596"
               height="296"
             />
-            <p>
+            <p class="text-center">
               Ready to take the next step? Contact us today to learn more about
               our services and how we can help you achieve your goals. We look
               forward to hearing from you!
