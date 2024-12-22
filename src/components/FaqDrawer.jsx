@@ -7,11 +7,11 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export default function FaqDrawer() {
   return (
-    <div className="mx-auto min-h-full w-1/2 px-4 pb-24 pt-20">
+    <div className="mx-auto min-h-full px-4 pb-8 pt-8 md:w-1/2">
       <div>
         <Disclosure as="div" className="p-6" defaultOpen={false}>
           <DisclosureButton className="group flex w-full items-center justify-between">
-            <span className="text-2xl font-medium">
+            <span className="text-sm font-medium md:text-2xl">
               How much does it cost to work with Academic Allies?
             </span>
             <ChevronDownIcon className="size-5 fill-black/60 group-data-[open]:rotate-180 group-data-[hover]:fill-black/50" />
@@ -23,7 +23,7 @@ export default function FaqDrawer() {
         </Disclosure>
         <Disclosure as="div" className="p-6">
           <DisclosureButton className="group flex w-full items-center justify-between">
-            <span className="text-2xl font-medium">
+            <span className="text-sm font-medium md:text-2xl">
               What are the qualifications of Academic Allies's consultants?
             </span>
             <ChevronDownIcon className="size-5 fill-black/60 group-data-[open]:rotate-180 group-data-[hover]:fill-black/50" />
@@ -37,7 +37,7 @@ export default function FaqDrawer() {
         </Disclosure>
         <Disclosure as="div" className="p-6">
           <DisclosureButton className="group flex w-full items-center justify-between">
-            <span className="text-2xl font-medium">
+            <span className="text-sm font-medium md:text-2xl">
               What is the process for working with Academic Allies?
             </span>
             <ChevronDownIcon className="size-5 fill-black/60 group-data-[open]:rotate-180 group-data-[hover]:fill-black/50" />
@@ -50,7 +50,7 @@ export default function FaqDrawer() {
         </Disclosure>
         <Disclosure as="div" className="p-6">
           <DisclosureButton className="group flex w-full items-center justify-between">
-            <span className="text-2xl font-medium">
+            <span className="text-sm font-medium md:text-2xl">
               What services does Academic Allies provide?
             </span>
             <ChevronDownIcon className="size-5 fill-black/60 group-data-[open]:rotate-180 group-data-[hover]:fill-black/50" />
@@ -65,7 +65,7 @@ export default function FaqDrawer() {
         </Disclosure>
         <Disclosure as="div" className="p-6">
           <DisclosureButton className="group flex w-full items-center justify-between">
-            <span className="text-2xl font-medium">
+            <span className="text-sm font-medium md:text-2xl">
               Does Academic Allies offer virtual consulting services?
             </span>
             <ChevronDownIcon className="size-5 fill-black/60 group-data-[open]:rotate-180 group-data-[hover]:fill-black/50" />
